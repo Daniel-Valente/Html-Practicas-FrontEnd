@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> PASTELERIA DRAGON DE JAZMIN </title>
+
+        <div>
+            <center>
+                <h1>
+                    LA PASTELERIA DRAGÓN DE JAZMÍN
+                </h1>
+            </center>
+        </div>        
+    </head>
+       
+
+    <body>
+        <h2>
+            <img src="Img/Logo pasteleria sin fondo.png" width="300" height="300">
+            <nav>
+               <center>
+                    <a href="#Inicio">INICIO</a>&nbsp&nbsp&nbsp&nbsp
+                    <a href="#Sabores">SABORES</a>&nbsp&nbsp&nbsp&nbsp
+                    <a href="#Adornos">ADORNOS</a>&nbsp&nbsp&nbsp&nbsp
+                    <a href="#Pedir">PEDIR</a>&nbsp&nbsp&nbsp&nbsp
+                    <a href="#Nosotros">NOSOTROS</a>
+               </center>
+            </nav>
+        </h2>
+        
+        <div name="Inicio">
+
+        </div>
+        
+        <center>
+            <a name="Sabores"><h3>Sabores de Pasteles</h3></a>
+        </center>
+        <div>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                SABORES
+                            </th>
+                            <th>
+                                PRECIO
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Chocolate Blanco
+                            </td>
+                            <td>
+                                $300
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Chocolate Negro Amargo
+                            </td>
+                            <td>
+                                $1,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Frambuesa
+                            </td>
+                            <td>
+                                $300
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Limón
+                            </td>
+                            <td>
+                                $150
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Coconut
+                            </td>
+                            <td>
+                                $800
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        
+        <br>
+        
+        <center>
+            <a name="Adornos"><h3>Adornos para Pasteles</h3></a>
+        </center>
+        <div>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ADORNOS
+                            </th>
+                            <th>
+                                PRECIOS
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Desnudo
+                            </td>
+                            <td>
+                                $100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Frutas
+                            </td>
+                            <td>
+                                $150
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lluvia de chocolate (lunetas, chispas)
+                            </td>
+                            <td>
+                                $50
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Rosas reales (comestibles)
+                            </td>
+                            <td>
+                                $200
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                Rosas de dulce
+                            </td>
+                            <td>
+                                $300
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Frutas exoticas
+                            </td>
+                            <td>
+                                $500
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        
+        <br>
+
+        <center>
+            <a name="Pedir"><h3>Realizar Pedido</h3></a>
+        </center>
+        <div>
+            <form action=" " id="pedido" method="post">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="10">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+                <br><br>
+                <label for="descripcion">Descripción del pedido:</label>
+                <input type="text" id="descripcion" name="descripcion" size="95">
+                <br><br>
+                <label for="sabores">Sabores de Pasteles</label><br>
+                <input type="checkbox" id="topping1" name="topping1" value="Blanco">
+                <label for="topping1">Chocolate Blanco</label>
+                <input type="checkbox" id="topping2" name="topping2" value="Amargo">
+                <label for="topping2">Chocolate Negro Amargo</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Frambuesa">
+                <label for="topping3">Frambuesa</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Limón">
+                <label for="topping3">Limón</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Coconut">
+                <label for="topping3">Coconut</label>
+                <br><br>
+                <label for="adornos">Adornos para Pasteles</label> <br><br>
+                <select name="adornos[]" id="adornos" multiple>
+                    <option value="1">Desnudo</option>
+                    <option value="2">Frutas</option>
+                    <option value="3">Lluvia de chocolate (lunetas, chispas)</option>
+                    <option value="4">Rosas reales (comestibles)</option>
+                    <option value="5">Rosas de dulce</option>
+                    <option value="6">Frutas exoticas</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+        </div>
+        
+        <br>
+        
+        <center>
+            <a name="Nosotros"><h3>Nosotros</h3></a>
+        </center>
+        <div>
+            <h4>Dirección:</h4> Circ. Del Alteño 10 Local 24, Col. . Tepatitlán de Morelos
+            <br>
+            <h4>Teléfono:</h4> 7:30 a 21:30 hrs
+            <br>
+            <h4>horarios de atención:</h4> 782-1974 y 782-2078
+        </div>
+    </body>
+</html>
